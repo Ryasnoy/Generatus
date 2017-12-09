@@ -1,40 +1,41 @@
 //
-// ⚡️Created by Generatus⚡️
+//  ⚡️Created by Generatus⚡️ on $CREATE_DATE
 // 
-// #mdlnmPresenter.swift
+//  $MODULE_NAMEPresenter.swift
 //
-// **************************
-//  Powered by Ryasnoy Oleg
-// **************************
+//  Created by $USER
+//  Copyright © $USER. All rights reserved.
+//
+
 
 import Foundation
 
-protocol #mdlnmView: class {
+protocol $MODULE_NAMEView: class {
   
 }
 
-protocol #mdlnmPresenter {
+protocol $MODULE_NAMEPresenter {
 
   func viewDidLoad()
 
 }
 
-protocol #mdlnmRouter {
+protocol $MODULE_NAMERouter {
   
 }
 
-class #mdlnmPresenterImplementation {
+class $MODULE_NAMEPresenterImplementation {
 
   /// View object
-  fileprivate weak var view: #mdlnmView?
+  fileprivate weak var view: $MODULE_NAMEView?
   
   /// Router object
-  fileprivate let router: #mdlnmRouter
+  fileprivate let router: $MODULE_NAMERouter
   
   //MARK: -
   
-  init(view: #mdlnmView,
-       router: #mdlnmRouter) {
+  init(view: $MODULE_NAMEView,
+       router: $MODULE_NAMERouter) {
 
     self.view = view
     self.router = router
@@ -43,9 +44,9 @@ class #mdlnmPresenterImplementation {
 
 }
 
-//MARK: - #mdlnmPresenter
+//MARK: - $MODULE_NAMEPresenter
 
-extension #mdlnmPresenterImplementation: #mdlnmPresenter {
+extension $MODULE_NAMEPresenterImplementation: $MODULE_NAMEPresenter {
 
   func viewDidLoad() {
     

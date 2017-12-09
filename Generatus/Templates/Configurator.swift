@@ -1,33 +1,34 @@
 //
-// ⚡️Created by Generatus⚡️
-// 
-// #mdlnmConfigurator.swift
+//  ⚡️Created by Generatus⚡️ on $CREATE_DATE
 //
-// **************************
-//  Powered by Ryasnoy Oleg
-// **************************
+//  $MODULE_NAMEConfigurator.swift
+//
+//  Created by $USER
+//  Copyright © $USER. All rights reserved.
+//
+
 
 import Foundation
 
-protocol #mdlnmConfigurator {
+protocol $MODULE_NAMEConfigurator {
 
-  func configure(#mdlnmViewController: #mdlnmViewController)
+  func configure(view: $MODULE_NAMEViewController)
 
 }
 
-class #mdlnmConfiguratorImplementation {
+class $MODULE_NAMEConfiguratorImplementation {
   
 }
 
-extension #mdlnmConfiguratorImplementation: #mdlnmConfigurator {
+extension $MODULE_NAMEConfiguratorImplementation: $MODULE_NAMEConfigurator {
 
-  func configure(#mdlnmViewController: #mdlnmViewController) {
+  func configure(view: $MODULE_NAMEViewController) {
 
-    let router = #mdlnmRouterImplementation(view: #mdlnmViewController)
+    let router = $MODULE_NAMERouterImplementation(view: $MODULE_NAMEViewController)
     
-    let presenter = #mdlnmPresenterImplementation(view: #mdlnmViewController,
+    let presenter = $MODULE_NAMEPresenterImplementation(view: $MODULE_NAMEViewController,
                                                              router: router)
-    #mdlnmViewController.presenter = presenter
+    view.presenter = presenter
 
   }
 

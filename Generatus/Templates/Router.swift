@@ -1,27 +1,28 @@
 //
-// ⚡️Created by Generatus⚡️
+//  ⚡️Created by Generatus⚡️ on $CREATE_DATE
 // 
-// #mdlnmRouter.swift
+//  $MODULE_NAMERouter.swift
 //
-// **************************
-//  Powered by Ryasnoy Oleg
-// **************************
+//  Created by $USER
+//  Copyright © $USER. All rights reserved.
+//
+
 
 import Foundation
 
-class #mdlnmRouterImplementation {
+class $MODULE_NAMERouterImplementation {
 
   /// View object
-  fileprivate weak var view: #mdlnmViewController?
+  fileprivate weak var view: $MODULE_NAMEViewController?
   
-  init(view: #mdlnmViewController) {
+  init(view: $MODULE_NAMEViewController) {
     self.view = view
   }
 
 }
 
-//MARK: - #mdlnmRouter
+//MARK: - $MODULE_NAMERouter
 
-extension #mdlnmRouterImplementation: #mdlnmRouter {
+extension $MODULE_NAMERouterImplementation: $MODULE_NAMERouter {
   
 }

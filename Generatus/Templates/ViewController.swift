@@ -1,34 +1,34 @@
 //
-// ⚡️Created by Generatus⚡️
+//  ⚡️Created by Generatus⚡️ on $CREATE_DATE
 // 
-//  #mdlnmViewController.swift
+//  $MODULE_NAMEViewController.swift
 //
-// **************************
-//  Powered by Ryasnoy Oleg
-// **************************
+//  Created by $USER
+//  Copyright © $USER. All rights reserved.
+//
 
 
 import UIKit
 
-class #mdlnmViewController: UIViewController {
+class $MODULE_NAMEViewController: UIViewController {
   
   /// Configurator object
-  fileprivate let configurator = #mdlnmConfiguratorImplementation()
+  fileprivate let configurator = $MODULE_NAMEConfiguratorImplementation()
   
   /// Presenter object
-  var presenter: #mdlnmPresenter?
+  var presenter: $MODULE_NAMEPresenter?
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    configurator.configure(#mdlnmViewController: self)
+    configurator.configure(view: self)
     presenter?.viewDidLoad()
   }
 
 }
 
-//MARK: - #mdlnmView
+//MARK: - $MODULE_NAMEView
 
-extension #mdlnmViewController: #mdlnmView {
+extension $MODULE_NAMEViewController: $MODULE_NAMEView {
   
 }
 
