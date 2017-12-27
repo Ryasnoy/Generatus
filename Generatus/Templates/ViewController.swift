@@ -20,7 +20,7 @@ class $MODULE_NAMEViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    configurator.configure(view: self)
+    configurator.configure(for: self)
     presenter?.viewDidLoad()
   }
 

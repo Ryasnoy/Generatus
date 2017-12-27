@@ -12,7 +12,7 @@ import Foundation
 
 protocol $MODULE_NAMEConfigurator {
 
-  func configure(view: $MODULE_NAMEViewController)
+  func configure(for view: $MODULE_NAMEViewController)
 
 }
 
@@ -22,12 +22,11 @@ class $MODULE_NAMEConfiguratorImplementation {
 
 extension $MODULE_NAMEConfiguratorImplementation: $MODULE_NAMEConfigurator {
 
-  func configure(view: $MODULE_NAMEViewController) {
+  func configure(for view: $MODULE_NAMEViewController) {
 
-    let router = $MODULE_NAMERouterImplementation(view: $MODULE_NAMEViewController)
+    let router = $MODULE_NAMERouterImplementation(for: view)
     
-    let presenter = $MODULE_NAMEPresenterImplementation(view: $MODULE_NAMEViewController,
-                                                             router: router)
+    let presenter = $MODULE_NAMEPresenterImplementation(for: view, with: router)
     view.presenter = presenter
 
   }

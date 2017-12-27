@@ -15,7 +15,7 @@ class $MODULE_NAMERouterImplementation {
   /// View object
   fileprivate weak var view: $MODULE_NAMEViewController?
   
-  init(view: $MODULE_NAMEViewController) {
+  init(for view: $MODULE_NAMEViewController) {
     self.view = view
   }
 

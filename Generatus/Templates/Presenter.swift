@@ -34,8 +34,7 @@ class $MODULE_NAMEPresenterImplementation {
   
   //MARK: -
   
-  init(view: $MODULE_NAMEView,
-       router: $MODULE_NAMERouter) {
+  init(for view: $MODULE_NAMEView, with router: $MODULE_NAMERouter) {
 
     self.view = view
     self.router = router
