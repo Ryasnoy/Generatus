@@ -1,6 +1,6 @@
 ![](https://github.com/Ryasnoy/Generatus/blob/master/GeneratusLogo.png)
 
-**Generatus** - It's a code generator made for working with Xcode. Primarily it is designed to generate [`MVP+Clean_Architecture`](https://github.com/Ryasnoy/MVP-Clean_Architecture/blob/master/README.md) modules.
+**Generatus** - It's a code generator made for working with Xcode. Primarily it is designed to generate `MVP+Clean_Architecture` modules.
 
 ### Info 
 * Generatus creates 4 required and unlimited amount optional templates such as:
@@ -26,6 +26,7 @@
 
 **Russian:** 
 https://github.com/Ryasnoy/MVP-Clean_Architecture/blob/master/README.md
+
 **English**
 https://github.com/FortechRomania/ios-mvp-clean-architecture
 
