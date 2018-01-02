@@ -17,10 +17,12 @@
 1. Run [`Generatus`](https://github.com/Ryasnoy/Generatus/blob/master/Generatus/Generatus)
 2. Enter path to your Xcode project
 3. Enter module name
-*Optional*
+
+**OPTIONAL**
+
 4. You can agree to create `Use Cases / Interactor`
 5. Enter `Use Cases / Interactor` name
-6. Repeat 4 state if you want to create more `Use Cases / Interactor`
+6. Repeat `4 step` if you want to create more `Use Cases / Interactor`
 
 ### Architecture Guides 
 
