@@ -1,4 +1,5 @@
 ![](https://github.com/Ryasnoy/Generatus/blob/master/GeneratusLogo.png)
+
 **Generatus** - It's a code generator made for working with Xcode. Primarily it is designed to generate [`MVP+Clean_Architecture`](https://github.com/Ryasnoy/MVP-Clean_Architecture/blob/master/README.md) modules.
 
 ### Info 
@@ -32,5 +33,8 @@ Oleg Ryasnoy
 
 ### Donate 
 [`Bitcoin`](https://blockchain.info/payment_request?address=1XdQE16epePaHN6319soiHEKtxUftgKNQ&message=Donate+on+Generatus&amount_local=20&currency=USD&nosavecurrency=true)
+
 **Bitcoin address**: 1XdQE16epePaHN6319soiHEKtxUftgKNQ
+
+
 ![](https://github.com/Ryasnoy/Generatus/blob/master/qr.png)
