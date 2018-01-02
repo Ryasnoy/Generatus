@@ -32,7 +32,7 @@ https://github.com/FortechRomania/ios-mvp-clean-architecture
 Oleg Ryasnoy
 
 ### Donate 
-[`Bitcoin`](https://blockchain.info/payment_request?address=1XdQE16epePaHN6319soiHEKtxUftgKNQ&message=Donate+on+Generatus&amount_local=20&currency=USD&nosavecurrency=true)
+[`Donate $20 in Bitcoin`](https://blockchain.info/payment_request?address=1XdQE16epePaHN6319soiHEKtxUftgKNQ&message=Donate+on+Generatus&amount_local=20&currency=USD&nosavecurrency=true)
 
 **Bitcoin address**: 1XdQE16epePaHN6319soiHEKtxUftgKNQ
 
