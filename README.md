@@ -1,3 +1,3 @@
-![](https://github.com/ryasnoy/AppLocker/raw/master/GeneratusLogo.png)
+![](https://github.com/Ryasnoy/Generatus/blob/master/GeneratusLogo.png)
 # Generatus
 
