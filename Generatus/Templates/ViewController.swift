@@ -12,15 +12,11 @@ import UIKit
 
 class $MODULE_NAMEViewController: UIViewController {
   
-  /// Configurator object
-  fileprivate let configurator = $MODULE_NAMEConfiguratorImplementation()
-  
-  /// Presenter object
   var presenter: $MODULE_NAMEPresenter?
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    configurator.configure(for: self)
+    $MODULE_NAMEConfiguratorImplementation.configure(for: self)
     presenter?.viewDidLoad()
   }
 

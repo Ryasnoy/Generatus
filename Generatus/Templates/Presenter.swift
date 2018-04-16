@@ -26,10 +26,8 @@ protocol $MODULE_NAMERouter {
 
 class $MODULE_NAMEPresenterImplementation {
 
-  /// View object
   fileprivate weak var view: $MODULE_NAMEView?
   
-  /// Router object
   fileprivate let router: $MODULE_NAMERouter
   
   //MARK: -
