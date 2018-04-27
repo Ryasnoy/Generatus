@@ -7,12 +7,11 @@
 //  Copyright © $USER. All rights reserved.
 //
 
-
 import Foundation
 
 protocol $MODULE_NAMEConfigurator {
 
-  func configure(for view: $MODULE_NAMEViewController)
+  static func configure(for view: $MODULE_NAMEViewController)
 
 }
 
@@ -22,7 +21,7 @@ class $MODULE_NAMEConfiguratorImplementation {
 
 extension $MODULE_NAMEConfiguratorImplementation: $MODULE_NAMEConfigurator {
 
-  func configure(for view: $MODULE_NAMEViewController) {
+  static func configure(for view: $MODULE_NAMEViewController) {
 
     let router = $MODULE_NAMERouterImplementation(for: view)
     

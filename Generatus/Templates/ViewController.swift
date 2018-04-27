@@ -7,7 +7,6 @@
 //  Copyright © $USER. All rights reserved.
 //
 
-
 import UIKit
 
 class $MODULE_NAMEViewController: UIViewController {

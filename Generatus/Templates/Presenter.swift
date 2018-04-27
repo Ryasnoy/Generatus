@@ -7,7 +7,6 @@
 //  Copyright © $USER. All rights reserved.
 //
 
-
 import Foundation
 
 protocol $MODULE_NAMEView: class {
@@ -26,9 +25,9 @@ protocol $MODULE_NAMERouter {
 
 class $MODULE_NAMEPresenterImplementation {
 
-  fileprivate weak var view: $MODULE_NAMEView?
+  private weak var view: $MODULE_NAMEView?
   
-  fileprivate let router: $MODULE_NAMERouter
+  private let router: $MODULE_NAMERouter
   
   //MARK: -
   

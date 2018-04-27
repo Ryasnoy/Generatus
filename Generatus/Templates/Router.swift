@@ -7,12 +7,11 @@
 //  Copyright © $USER. All rights reserved.
 //
 
-
-import Foundation
+import UIKit
 
 class $MODULE_NAMERouterImplementation {
 
-  fileprivate weak var view: $MODULE_NAMEViewController?
+  private weak var view: $MODULE_NAMEViewController?
   
   init(for view: $MODULE_NAMEViewController) {
     self.view = view
