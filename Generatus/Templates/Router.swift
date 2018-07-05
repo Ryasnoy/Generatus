@@ -1,26 +1,29 @@
 //
 //  ⚡️Created by Generatus⚡️ on $CREATE_DATE
-// 
+//  https://github.com/Ryasnoy/Generatus
+//
 //  $MODULE_NAMERouter.swift
 //
 //  Created by $USER
 //  Copyright © $USER. All rights reserved.
 //
-
 import UIKit
 
-class $MODULE_NAMERouterImplementation {
-
-  private weak var view: $MODULE_NAMEViewController?
+final class $MODULE_NAMERouter: BaseRouter<$MODULE_NAMEViewController> {
   
-  init(for view: $MODULE_NAMEViewController) {
-    self.view = view
-  }
+  private weak var viewController: $MODULE_NAMEViewController?
 
+  required init<ViewType>(view: ViewType) {
+    super.init(view: view)
+    self.viewController = view as? $MODULE_NAMEViewController
+  }
+  
+  func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    // prepare here some data for destination viewController
+  }
+  
 }
 
-//MARK: - $MODULE_NAMERouter
-
-extension $MODULE_NAMERouterImplementation: $MODULE_NAMERouter {
+extension $MODULE_NAMERouter: $MODULE_NAMERouterProtocol {
   
 }

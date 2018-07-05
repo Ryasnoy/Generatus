@@ -1,54 +1,27 @@
 //
 //  ⚡️Created by Generatus⚡️ on $CREATE_DATE
-// 
+//  https://github.com/Ryasnoy/Generatus
+//
 //  $MODULE_NAMEPresenter.swift
 //
 //  Created by $USER
 //  Copyright © $USER. All rights reserved.
 //
-
 import Foundation
 
-protocol $MODULE_NAMEView: class {
+class $MODULE_NAMEPresenter: BasePresenter<$MODULE_NAMEViewController, $MODULE_NAMERouter> {
   
-}
-
-protocol $MODULE_NAMEPresenter {
-
-  func viewDidLoad()
-
-}
-
-protocol $MODULE_NAMERouter {
+  weak var view: $MODULE_NAMEViewController?
+  var router: $MODULE_NAMERouterProtocol!
   
-}
-
-class $MODULE_NAMEPresenterImplementation {
-
-  private weak var view: $MODULE_NAMEView?
-  
-  private let router: $MODULE_NAMERouter
-  
-  //MARK: -
-  
-  init(for view: $MODULE_NAMEView, with router: $MODULE_NAMERouter) {
-
-    self.view = view
-    self.router = router
-
+  required init<ViewType, RouterType>(view: ViewType, router: RouterType) {
+    super.init(view: view, router: router)
+    self.view = view as? $MODULE_NAMEViewController
+    self.router = router as! $MODULE_NAMERouterProtocol
   }
-
 }
 
-//MARK: - $MODULE_NAMEPresenter
+extension $MODULE_NAMEPresenter: $MODULE_NAMEPresenterProtocol {
 
-extension $MODULE_NAMEPresenterImplementation: $MODULE_NAMEPresenter {
-
-  func viewDidLoad() {
-    
-  }
-
+  
 }
-
-
-
