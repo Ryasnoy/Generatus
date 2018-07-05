@@ -5,24 +5,23 @@
 ### Info 
 * Generatus creates 4 required and unlimited amount optional templates such as:
 * `Presenter`
-* `Configurator`
+* `Base Assmebler`
 * `Router`
 * `ViewController`
 
-**OPTIONAL**
-
-* `Interactor`
-
 ### Usage
+
+`Base.swift` - the required base classes to use. Just move it to the root project folder
+
 1. Run [`Generatus`](https://github.com/Ryasnoy/Generatus/blob/master/Generatus/Generatus)
 2. Enter path to your Xcode project
 3. Enter module name
 
 **OPTIONAL**
 
-4. You can agree to create `Use Cases / Interactor`
-5. Enter `Use Cases / Interactor` name
-6. Repeat `4 step` if you want to create more `Use Cases / Interactor`
+4. You can agree to create more modules
+5. Enter module name
+6. Repeat `4 step` if you want to create more modules
 
 ### Architecture Guides 
 
