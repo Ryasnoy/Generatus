@@ -9,7 +9,7 @@
 //
 import UIKit
 
-final class $MODULE_NAMEAssembler: BaseConfigurator<$MODULE_NAMEViewController, $MODULE_NAMERouter, $MODULE_NAMEPresenter> {}
+final class $MODULE_NAMEAssembler: GConfigurator<$MODULE_NAMEViewController, $MODULE_NAMERouter, $MODULE_NAMEPresenter> {}
 final class $MODULE_NAMEViewController: UIViewController {
   
   var presenter: $MODULE_NAMEPresenterProtocol?

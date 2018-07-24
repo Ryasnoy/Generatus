@@ -9,7 +9,7 @@
 //
 import UIKit
 
-final class $MODULE_NAMERouter: BaseRouter<$MODULE_NAMEViewController> {
+final class $MODULE_NAMERouter: GRouter<$MODULE_NAMEViewController> {
   
   private weak var viewController: $MODULE_NAMEViewController?
 

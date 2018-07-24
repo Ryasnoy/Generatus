@@ -9,7 +9,7 @@
 //
 import UIKit
 
-protocol $MODULE_NAMEViewProtocol: BaseView where PresenterType == $MODULE_NAMEPresenterProtocol {
+protocol $MODULE_NAMEViewProtocol: GView where PresenterType == $MODULE_NAMEPresenterProtocol {
   
 }
 

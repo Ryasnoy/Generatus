@@ -9,7 +9,7 @@
 //
 import Foundation
 
-class $MODULE_NAMEPresenter: BasePresenter<$MODULE_NAMEViewController, $MODULE_NAMERouter> {
+class $MODULE_NAMEPresenter: GPresenter<$MODULE_NAMEViewController, $MODULE_NAMERouter> {
   
   weak var view: $MODULE_NAMEViewController?
   var router: $MODULE_NAMERouterProtocol!
