@@ -10,14 +10,7 @@
 import UIKit
 
 final class $MODULE_NAMERouter: GRouter<$MODULE_NAMEViewController> {
-  
-  private weak var viewController: $MODULE_NAMEViewController?
 
-  required init<ViewType>(view: ViewType) {
-    super.init(view: view)
-    self.viewController = view as? $MODULE_NAMEViewController
-  }
-  
   func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     // prepare here some data for destination viewController
   }
