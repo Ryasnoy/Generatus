@@ -17,7 +17,7 @@ class $MODULE_NAMEPresenter: GPresenter<$MODULE_NAMEViewController, $MODULE_NAME
   required init<ViewType, RouterType>(view: ViewType, router: RouterType) {
     super.init(view: view, router: router)
     self.view = view as? $MODULE_NAMEViewController
-    self.router = router as! $MODULE_NAMERouterProtocol
+    self.router = router as? $MODULE_NAMERouterProtocol
   }
 }
 
