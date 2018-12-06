@@ -8,31 +8,47 @@
 
 import UIKit
 
-protocol BaseView: class where Self: UIViewController {
-  associatedtype PresenterType
-  var presenter: PresenterType? { set get }
+protocol GView: class where Self: UIViewController {
+    associatedtype PresenterType
+    var presenter: PresenterType? { set get }
+    
 }
 
-class BasePresenter<V, R> {
-  typealias ViewType = V
-  typealias RouterType = R
-  required init<ViewType, RouterType>(view: ViewType, router: RouterType) {}
+class GPresenter<V, R> {
+    typealias ViewType = V
+    typealias RouterType = R
+    required init<ViewType, RouterType>(view: ViewType, router: RouterType) {}
 }
 
-class BaseRouter<V> {
-  typealias ViewType = V
-  required init<ViewType>(view: ViewType) {}
+class GRouter<V> {
+    
+    weak var viewController: UIViewController?
+    
+    typealias ViewType = V
+    required init<ViewType>(view: ViewType) {
+        viewController = view as? UIViewController
+    }
+    
+    func close() {
+        self.viewController?.dismiss(animated: true, completion: nil)
+    }
+    
+    func back() {
+        self.viewController?.navigationController?.popViewController(animated: true)
+    }
+    
 }
 
-class BaseConfigurator<ViewType: BaseView, RouterType: BaseRouter<ViewType>, PresenterType: BasePresenter<ViewType, RouterType>> {
-  
-  @discardableResult
-  func configure(view: ViewType) -> PresenterType {
-    let router = RouterType(view: view)
-    let presenter = PresenterType(view: view, router: router)    
-    view.presenter = presenter as? ViewType.PresenterType
-    return presenter
-  }
-  
+class GConfigurator<ViewType: GView,
+    RouterType: GRouter<ViewType>,
+PresenterType: GPresenter<ViewType, RouterType>> {
+    
+    @discardableResult
+    func configure(view: ViewType) -> PresenterType {
+        let router = RouterType(view: view)
+        let presenter = PresenterType(view: view, router: router)
+        view.presenter = presenter as? ViewType.PresenterType
+        return presenter
+    }
+    
 }
-
