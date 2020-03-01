@@ -28,15 +28,7 @@ class GRouter<V> {
     required init<ViewType>(view: ViewType) {
         viewController = view as? UIViewController
     }
-    
-    func close() {
-        self.viewController?.dismiss(animated: true, completion: nil)
-    }
-    
-    func back() {
-        self.viewController?.navigationController?.popViewController(animated: true)
-    }
-    
+
 }
 
 class GConfigurator<ViewType: GView,
