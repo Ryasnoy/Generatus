@@ -17,3 +17,11 @@ struct $MODULE_NAMEView: View {
     }
     
 }
+
+struct $MODULE_NAME_Preview: PreviewProvider {
+    
+    static var previews: some View {
+        $MODULE_NAMEView()
+    }
+    
+}
