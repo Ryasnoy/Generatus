@@ -7,6 +7,7 @@
 //  Created by $USER
 //  Copyright © $USER. All rights reserved.
 //
+
 import Foundation
 
 final class $MODULE_NAMEViewModel: ObservableObject {
