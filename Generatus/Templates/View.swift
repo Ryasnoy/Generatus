@@ -12,6 +12,8 @@ import SwiftUI
 
 struct $MODULE_NAMEView: View {
     
+    @ObservedObject var viewModel = $MODULE_NAMEViewModel()
+    
     var body: some View {
         Text("$MODULE_NAME")
     }
